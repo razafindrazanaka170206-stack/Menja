@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Miles</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            text-align: center;
+            padding: 70px 20px;
+            animation: fadeDown 1s ease;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+
+        header p {
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        /* NAV */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00f7ff;
+        }
+
+        /* SECTIONS */
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        /* PHOTO PROFIL */
+
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile img {
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+            object-fit: cover;
+            border: 5px solid rgb(200, 90, 150);
+            transition: 0.8s;
+        }
+
+        .profile img:hover {
+            transform: scale(1.05);
+        }
+
+        /* CV */
+
+        .cv {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        /* COMPETENCES */
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            background: rgba(255, 255, 255, 0.2);
+            height: 10px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 10px;
+            background: #00f7ff;
+            border-radius: 20px;
+            animation: load 2s;
+        }
+
+        
+
+        /* CONTACT */
+
+        .contact {
+            background: rgba(9, 48, 243, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+        }
+
+        /* ANIMATIONS */
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes load {
+            from {
+                width: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>BONJOUR,Je suis Menja etudiante dans l'EMIT de l'Université de Fianarantsoa parcours de mention L1DAI2  </h1>
+        <p>Graphiste • Designer • Créateur digital</p>
+    </header>
+
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#cv">CV</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+
+        <div class="profile">
+            <img src="menja.jpg.jpg" alt="ma photo"/>
+        </div>
+
+        <h2>À propos de moi</h2>
+
+        <p> Je suis razafindrazanaka Nomenjanahary vous pouvez m'apppeler menja
+            e suis un etudiante motivé et passionné par l'informatique et les nouvelles techonologie 
+
+        
+        </p>
+
+    </section>
+
+    <section id="cv">
+
+        <h2>Mon CV</h2>
+
+        <div class="cv">
+
+            <p><strong>Nom :</strong> RAZAFINDRAZANAKA Nomenjanahary</p>
+            <p><strong>Profession :</strong> / Designer</p>
+            <p><strong>Expérience :</strong> Création d'identité visuelle, design d'interfaces web, projets graphiques.
+            </p>
+            <p><strong>Formation :</strong> Études en management et design numérique.</p>
+            <p><strong>Objectif :</strong> Créer des designs modernes et travailler sur des projets innovants.</p>
+
+        </div>
+    </section>
+
+    <section id="skills">
+
+        <h2>Compétences</h2>
+
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width:60%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width:55%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width:50%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width:65%"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="contact">
+            <p>Email : razafindrazanakanomenjanahary@email.com</p>
+            <p>Fb:sarobidy Nomenjanahary</p>
+            
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Menja Portfolio
+    </footer>
+
+</body>
+
+</html>
